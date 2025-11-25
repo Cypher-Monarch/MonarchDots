@@ -1,0 +1,34 @@
+window {
+  background: #282828; /* Gruvbox dark */
+  border-radius: 14px;
+  border: 2px solid rgba(250, 189, 47, 0.35); /* Gruvbox yellow border */
+}
+
+#box {
+  padding: 14px 18px;
+  background: transparent;
+  border: none;
+}
+
+#active {
+  border-bottom: 2px solid rgba(250, 189, 47, 0.8); /* underline active icon */
+}
+
+button, image {
+  all: unset; /* strip GTK styling */
+  color: #fabd2f; /* Gruvbox yellow */
+}
+
+button {
+  color: #fabd2f;
+  margin: 0 4px;
+}
+
+button:hover {
+  color: #fe8019; /* Gruvbox orange on hover */
+}
+
+button:focus {
+  outline: none;
+}
+

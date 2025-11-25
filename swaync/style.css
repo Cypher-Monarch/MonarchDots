@@ -1,0 +1,160 @@
+/* Full Gruvbox overhaul for the notification area */
+:root {
+  --cc-bg: rgba(40, 40, 40, 0.95); /* Gruvbox bg */
+  --noti-border-color: rgba(250, 189, 47, 0.3); /* yellow border */
+  --noti-bg: 40, 40, 40;
+  --noti-bg-alpha: 0.92;
+  --noti-bg-darker: rgb(29, 32, 33);
+  --noti-bg-hover: rgb(60, 56, 54);
+  --noti-bg-focus: rgba(250, 189, 47, 0.1); /* faint yellow focus */
+  --noti-close-bg: rgb(50, 48, 47);
+  --noti-close-bg-hover: rgb(80, 73, 69);
+  --text-color: #ebdbb2; /* Gruvbox fg */
+  --text-color-disabled: rgba(235, 219, 178, 0.5);
+  --bg-selected: #fabd2f;
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
+  --noti-bg-alt: rgba(50, 48, 47, 0.9);
+}
+
+.notification-row .notification-background .notification {
+  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  border: 1px solid var(--noti-border-color);
+  border-radius: 12px;
+  transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.notification-row .notification-background .notification .notification-default-action {
+  background: transparent;
+  color: var(--text-color);
+}
+
+.notification-row .notification-background .notification .notification-default-action:hover {
+  background: var(--noti-bg-hover);
+}
+
+.notification-group .notification-group-buttons,
+.notification-group .notification-group-headers,
+.notification-group .notification-group-headers .notification-group-header,
+.notification-group .notification-group-headers .notification-group-icon {
+  color: var(--text-color);
+}
+
+.control-center {
+  background: var(--cc-bg);
+  color: var(--text-color);
+  border: 1px solid var(--noti-border-color);
+  box-shadow: 0 0 8px rgba(250, 189, 47, 0.15);
+}
+
+.control-center .control-center-list .notification {
+  box-shadow: 0 0 10px rgba(250, 189, 47, 0.1);
+}
+
+.control-center .control-center-list .notification .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-action:hover {
+  background: var(--noti-bg-hover);
+}
+
+/* Buttons */
+.notification-action > button,
+.notification-alt-actions > button,
+.inline-reply-button {
+  border: 1px solid var(--noti-border-color);
+  color: var(--text-color);
+  background: transparent;
+}
+
+.notification-action > button:hover,
+.notification-alt-actions > button:hover,
+.inline-reply-button:hover {
+  background: var(--noti-bg-hover);
+}
+
+/* Volume widget */
+.per-app-volume {
+  background-color: var(--noti-bg-alt);
+  color: var(--text-color);
+  border: 1px solid var(--noti-border-color);
+}
+
+/* MPRIS media widget */
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-title,
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-subtitle {
+  color: var(--text-color);
+}
+
+/* DND Toggle */
+.widget-dnd switch {
+  background-color: rgba(250, 189, 47, 0.15);
+  border: 1px solid var(--noti-border-color);
+  box-shadow: inset 0 0 5px rgba(250, 189, 47, 0.2);
+}
+
+.widget-dnd switch:checked {
+  background-color: rgba(250, 189, 47, 0.4);
+  border-color: var(--text-color);
+  box-shadow: 0 0 5px rgba(250, 189, 47, 0.5);
+}
+
+.widget-dnd switch slider {
+  background-color: #fabd2f;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(250, 189, 47, 0.6);
+  border: 2px solid rgba(250, 189, 47, 0.6);
+}
+
+/* Sliders */
+.widget-volume scale trough,
+.widget-backlight scale trough {
+  background-color: rgba(50, 48, 47, 0.9);
+  border: 1px solid rgba(250, 189, 47, 0.2);
+  border-radius: 12px;
+}
+
+.widget-volume scale trough highlight,
+.widget-backlight scale trough highlight {
+  background: #fabd2f;
+  min-height: 4px;
+  border-radius: 999px;
+}
+
+.widget-volume scale slider,
+.widget-backlight scale slider {
+  background-color: #fabd2f;
+  border: 2px solid rgba(250, 189, 47, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(250, 189, 47, 0.5);
+}
+
+.widget-volume scale trough:focus,
+.widget-backlight scale trough:focus {
+  outline: none;
+  border: 1px solid rgba(250, 189, 47, 0.15);
+}
+
+.widget-buttons-grid {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.widget-buttons-grid flowboxchild {
+  min-width: calc((400px - 10px) / 5);
+}
+
+/* Generic Buttons */
+button {
+  background: rgba(50, 48, 47, 0.9);
+  color: var(--text-color);
+  border: 1px solid var(--noti-border-color);
+  border-radius: 12px;
+  transition: background 0.15s ease-in-out;
+}
+
+button:hover {
+  background: rgba(80, 73, 69, 0.9);
+  color: var(--text-color);
+  border-color: var(--bg-selected);
+}
+

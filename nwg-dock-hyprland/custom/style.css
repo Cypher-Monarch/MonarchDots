@@ -1,0 +1,33 @@
+window {
+  background: rgba(251, 111, 146, 0.2);
+  border-radius: 14px;
+  border: 2px solid rgba(255, 0, 127, 0.35); 
+}
+
+#box {
+  padding: 14px 18px;
+  background: transparent;
+  border: none;
+}
+
+#active {
+  border-bottom: 2px solid rgba(255, 0, 127, 0.8); /* underline active icon */
+}
+
+button, image {
+  all: unset; /* completely strip GTK styling */
+}
+
+button {
+  color: #ffb3c6;
+  margin: 0 4px;
+}
+
+button:hover {
+  color: #ffe08a; /* lighter gold on hover */
+}
+
+button:focus {
+  outline: none;
+}
+

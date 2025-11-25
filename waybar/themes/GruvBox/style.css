@@ -1,0 +1,85 @@
+/* Global */
+* {
+  font-family:
+    "JetBrainsMono Nerd Font Mono", "JetBrainsMono Nerd Font",
+    "Font Awesome 6 Free", "Font Awesome 5 Free", monospace;
+  font-size: 13px;
+  color: #ebdbb2; /* Gruvbox FG */
+}
+
+window#waybar {
+  background-color: rgba(40, 40, 40, 0.85); /* Gruvbox dark */
+  border-bottom: 1px solid #fabd2f; /* Yellow accent */
+}
+
+/* Workspace buttons */
+#workspaces button,
+#hyprland-workspaces button {
+  padding: 0 10px;
+  margin: 4px 3px;
+  border-radius: 8px;
+  background-color: #3c3836; /* Dark gray */
+  color: #ebdbb2;
+  transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+  color: #282828;
+  background-color: #fabd2f; /* Yellow */
+}
+
+#workspaces button.active {
+  background-color: #504945; /* Active dark */
+  color: #fabd2f;
+}
+
+/* Module containers */
+#custom-system,
+#disk,
+#custom-exit,
+#custom-notification,
+#custom-vpn,
+#bluetooth,
+#clock,
+#cpu,
+#memory,
+#battery,
+#pulseaudio,
+#network,
+#tray {
+  font-family:
+    "JetBrainsMono Nerd Font", "Font Awesome 5 Free", "Font Awesome 5 Brands",
+    monospace;
+  padding: 0 12px;
+  background-color: rgba(60, 56, 54, 0.9); /* Gruvbox bg */
+  margin: 4px 6px;
+  border-radius: 10px;
+  color: #ebdbb2;
+}
+
+#custom-vpn {
+  font-family:
+    "Noto Color Emoji", "JetBrainsMono Nerd Font", "Font Awesome 5 Free",
+    "Font Awesome 5 Brands", monospace;
+}
+
+#custom-cava {
+  font-family:
+    "JetBrainsMono Nerd Font", "Font Awesome 5 Free", "Font Awesome 5 Brands",
+    monospace;
+  padding: 0 12px;
+  background-color: rgba(60, 56, 54, 0.9); /* Gruvbox bg */
+  margin: 4px 6px;
+  border-radius: 10px;
+  color: #ebdbb2;
+}
+
+#tray menu {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+#battery.charging {
+  background-color: rgba(184, 187, 38, 0.2); /* Gruvbox green */
+  color: #b8bb26;
+}
