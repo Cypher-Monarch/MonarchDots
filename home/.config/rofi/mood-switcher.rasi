@@ -1,0 +1,27 @@
+configuration {
+    font: "JetBrains Mono 12";
+    show-icons: false;
+}
+
+window {
+    width: 40%;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+listview {
+    columns: 2;
+    lines: 1;
+    spacing: 20px;
+}
+
+element {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: #FFD700; /* gold */
+    text-color: #000000;       /* black */
+}
+

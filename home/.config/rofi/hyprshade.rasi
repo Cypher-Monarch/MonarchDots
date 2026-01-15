@@ -1,0 +1,73 @@
+* {
+    bg:        #282828;   /* dark grey base */
+    fg:        #ebdbb2;   /* soft cream text */
+    accent:    #d79921;   /* gold */
+    highlight: #b8bb26;   /* slightly brighter green */
+}
+
+/* Window */
+window {
+    width:          18em;             /* a bit wider for nicer spacing */
+    padding:        10px;             /* more breathing room */
+    border:         2px;
+    border-color:   @accent;
+    border-radius:  8px;              /* slightly rounder */
+    background-color: @bg;
+    location:       center;
+}
+
+/* Main menu box */
+mainbox {
+    padding:        0;
+    spacing:        0;
+    children:       [ "listview" ];
+    background-color: transparent;
+}
+
+/* List of options */
+listview {
+    columns:        1;
+    lines:          5;                /* show more options by default */
+    fixed-height:   false;            /* allow dynamic height */
+    spacing:        8px;
+    padding:        8px;
+    background-color: transparent;
+    text-color:     @fg;
+    cursor:         "pointer";        /* more interactive feel */
+    font:           "JetBrains Mono 11"; /* optional: nicer monospaced font */
+}
+
+/* Individual option (normal state) */
+element {
+    padding:        8px 12px;
+    border-radius:  6px;
+    text-color:     @fg;
+}
+
+/* Selected option */
+element selected {
+    background-color: @accent;
+    text-color:       @bg;
+    font-weight:      bold;
+}
+
+/* Text inside each option */
+element-text {
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    background-color: transparent;
+    text-color: inherit;
+    cursor: inherit;
+}
+
+/* Input bar (if shown in dmenu mode) */
+inputbar {
+    padding:        8px 12px;
+    border:         1px;
+    border-color:   @highlight;
+    border-radius:  6px;
+    background-color: @bg;
+    text-color:     @fg;
+    font-style:     italic;  /* subtle stylistic touch */
+}
+

@@ -1,0 +1,41 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "include": [
+    "~/.config/waybar/themes/GruvBox/modules.jsonc"
+  ],
+
+  "modules-left": ["clock", "bluetooth", "custom/vpn", "custom/cava", "tray"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["group/hardware", "battery", "pulseaudio", "network", "custom/notification", "custom/exit"],
+
+  "clock": {
+    "format": "  {:%I:%M:%S %p}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "interval": 1
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": " {used:0.1f}G/{total:0.1f}G",
+    "tooltip": false
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": false
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+}
+
