@@ -8,7 +8,7 @@
 
 ---
 
-> *“A desktop should get out of your way, not trip you on the way in.”*
+> *“Why spend time looking at a boring desktop, when you can look at a pretty one”*
 
 MonarchDots bundles all configs that make your system look the way it should: smooth animations, sharp fonts, responsive bars, tidy notifications, and a consistent Wayland workflow. Everything lives in `~/.config`, then gets copied into this repo.
 
@@ -38,21 +38,27 @@ Shell setup (`.zshrc`) is included for convenience Powerlevel10k, Zinit, FZF, Gr
 
 ```
 MonarchDots/
- ├─ hypr/
- ├─ hyprlock/
- ├─ waybar/
- ├─ waypaper/
- ├─ cava/
- ├─ eww/
- ├─ fuzzel/
- ├─ kitty/
- ├─ rofi/
- ├─ swaync/
- ├─ nwg-dock-hyprland/
- ├─ wlogout/
- ├─ misc/
- └─ .zshrc  (optional)
- └─ .p10k.zsh
+├── home
+│   ├── .config
+│   │   ├── cava
+│   │   ├── eww
+│   │   ├── fastfetch
+│   │   ├── fuzzel
+│   │   ├── hypr
+│   │   ├── hyprlock
+│   │   ├── kitty
+│   │   ├── misc
+│   │   ├── nwg-dock-hyprland
+│   │   ├── rofi
+│   │   ├── swaync
+│   │   ├── waybar
+│   │   ├── waypaper
+│   │   └── wlogout
+│   ├── .dircolors
+│   ├── .p10k.zsh
+│   └── .zshrc
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -68,7 +74,7 @@ git clone https://github.com/yourname/MonarchDots .
 Copy the contents into place:
 
 ```bash
-cp -r MonarchDots/* ~/.config/
+cp -r MonarchDots/home/* ~
 ```
 
 And reload your session or Hyprland.
