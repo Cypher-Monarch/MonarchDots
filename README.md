@@ -68,7 +68,7 @@ MonarchDots/
 Clone the repo anywhere you like:
 
 ```bash
-git clone https://github.com/yourname/MonarchDots .
+git clone https://github.com/Cypher-Monarch/MonarchDots 
 ```
 
 Copy the contents into place:
