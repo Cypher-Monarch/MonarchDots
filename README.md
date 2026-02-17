@@ -1,6 +1,6 @@
 # MonarchDots
 
-[![GitHub](https://img.shields.io/badge/GitHub-MonarchDots-black?logo=github)](https://github.com/yourname/MonarchDots)
+[![GitHub](https://img.shields.io/badge/GitHub-MonarchDots-black?logo=github)](https://github.com/Cypher-Monarch/MonarchDots)
 [![OS](https://img.shields.io/badge/Works%20on-Arch%20Linux-blue?logo=arch-linux)]()
 [![License](https://img.shields.io/badge/License-MIT-gold)](LICENSE)
 
@@ -8,85 +8,96 @@
 
 ---
 
-> *“Why spend time looking at a boring desktop, when you can look at a pretty one”*
+> *“Why spend time looking at a boring desktop, when you can look at a pretty one.”*
 
-MonarchDots bundles all configs that make your system look the way it should: smooth animations, sharp fonts, responsive bars, tidy notifications, and a consistent Wayland workflow. Everything lives in `~/.config`, then gets copied into this repo.
+MonarchDots bundles all configs that shape a cohesive Wayland environment: smooth animations, sharp fonts, responsive bars, tidy notifications, and a consistent workflow.
+
+The setup is reproducible from a fresh install using a bootstrap script.
 
 ---
 
 ## ✨ What’s Inside
 
-* 🌀 **Hyprland** — main window manager
-* 🔒 **Hyprlock** — lockscreen
-* 🪟 **Waybar** — status bar
-* 🌄 **Waypaper** — wallpaper manager
-* 🔊 **Cava** — audio visualizer
-* 🐇 **Eww** — widgets
-* 🔍 **Fuzzel** — launcher
-* 🖥️ **Kitty** — terminal
-* 🧊 **Rofi** — menus
-* 🔔 **SwayNC** — notifications + control center
-* 📦 **nwg-dock-hyprland** — dock
-* 🚪 **Wlogout** — logout screen
-* 🧩 **Misc** — scripts & helpers
+* 🌀 Hyprland — window manager
+* 🔒 Hyprlock — lockscreen
+* 🪟 Waybar — status bar
+* 🌄 Waypaper — wallpaper manager
+* 🔊 Cava — audio visualizer
+* 🐇 Eww — widgets
+* 🔍 Fuzzel — launcher
+* 🖥️ Kitty — terminal
+* 🧊 Rofi — menus
+* 🔔 SwayNC — notifications
+* 📦 nwg-dock-hyprland — dock
+* 🚪 Wlogout — logout screen
+* 🧩 Scripts — power, screenshots, wallpaper, utilities
 
-Shell setup (`.zshrc`) is included for convenience Powerlevel10k, Zinit, FZF, Gruvbox LS_COLORS, and Pyenv.
-
----
-
-## 📂 Directory Structure
-
-```
-MonarchDots/
-├── home
-│   ├── .config
-│   │   ├── cava
-│   │   ├── eww
-│   │   ├── fastfetch
-│   │   ├── fuzzel
-│   │   ├── hypr
-│   │   ├── hyprlock
-│   │   ├── kitty
-│   │   ├── misc
-│   │   ├── nwg-dock-hyprland
-│   │   ├── rofi
-│   │   ├── swaync
-│   │   ├── waybar
-│   │   ├── waypaper
-│   │   └── wlogout
-│   ├── .dircolors
-│   ├── .p10k.zsh
-│   └── .zshrc
-├── LICENSE
-└── README.md
-```
+Shell setup is included for convenience:
+Powerlevel10k, Zinit, FZF, Gruvbox LS_COLORS, and Pyenv.
 
 ---
 
 ## 🚀 Installation
 
-Clone the repo anywhere you like:
+### Quick Install (Recommended)
+
+Run the bootstrap installer:
 
 ```bash
-git clone https://github.com/Cypher-Monarch/MonarchDots 
+curl -fsSL https://github.com/Cypher-Monarch/MonarchDots/releases/latest/download/bootstrap.sh | bash
 ```
 
-Copy the contents into place:
+This will:
 
-```bash
-cp -r MonarchDots/home/* ~
-```
+* Install required packages
+* Copy all configs
+* Enable essential services
+* Optionally install Chaotic-AUR
+* Optionally apply the GRUB theme
 
-And reload your session or Hyprland.
+Reboot or restart your session after installation.
 
 ---
 
-## 🔧 Supports
+### Manual Install
 
-* **Wayland / Hyprland**
-* **Arch Linux**
-* **PipeWire + WirePlumber**
-* **Nerd Fonts (recommended)**
+Clone the repository:
+
+```bash
+git clone https://github.com/Cypher-Monarch/MonarchDots
+```
+
+Copy configs:
+
+```bash
+rsync -a MonarchDots/home/ ~/
+```
+
+Install required packages manually.
+
+---
+
+## 🧠 Design Philosophy
+
+MonarchDots aims to be:
+
+* Minimal but complete
+* Fast and responsive
+* Visually consistent
+* Reproducible from a fresh install
+
+The goal is a system that feels cohesive rather than a loose collection of configs.
+
+---
+
+## 🔧 Requirements
+
+* Arch Linux
+* Wayland / Hyprland
+* PipeWire + WirePlumber
+* Nerd Fonts
+
+The bootstrap installer handles most of this automatically.
 
 ---
 
@@ -103,4 +114,46 @@ And reload your session or Hyprland.
 ## 📜 License
 
 MIT — feel free to reuse anything.
+
+---
+
+## 🛣️ Roadmap
+
+Planned improvements and ideas for future versions:
+
+* Improve bootstrap script reliability and detection
+* Automatic monitor and resolution profiles
+* Dynamic wallpaper / theme switching
+* More Waybar themes and layout presets
+* Better laptop vs desktop power profile handling
+* Optional minimal install mode
+* Performance tuning and startup optimization
+
+Long-term ideas:
+
+* Multi-distro bootstrap support
+* Automatic GPU detection (Intel / AMD / NVIDIA)
+* Theming presets selectable during install
+
+---
+
+If you want a slightly cooler tone that fits the Monarch vibe a bit more, here’s an alternate version:
+
+---
+
+## 🛣️ Roadmap
+
+Things I’m experimenting with or planning:
+
+* Smarter bootstrap and hardware detection
+* Dynamic themes and wallpaper automation
+* More Waybar themes and layout presets
+* Optional minimal install mode
+* Laptop / desktop specific tweaks
+
+Future possibilities:
+
+* Multi-distro support
+* GPU-aware configs
+* Install-time theme selection
 

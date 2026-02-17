@@ -1,7 +1,7 @@
 # ==============================
-# ZSH / Oh-My-Zsh Setup
+# ZSH / Zinit Setup
 # ==============================
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.zinit"
 export TERM=xterm-256color
 export EDITOR=nvim
 export ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -11,6 +11,7 @@ if [[ -n $SSH_CONNECTION && $TTY == /dev/pts/* ]]; then
     export DISPLAY=:1
     export XDG_RUNTIME_DIR=/run/user/1000
     export WAYLAND_DISPLAY=wayland-1
+    fastfetch
 fi
 
 # Powerlevel10k theme
@@ -42,15 +43,15 @@ zinit light jeffreytse/zsh-vi-mode
 alias cls="clear"
 alias q='exit'
 alias ls="eza --icons=always"
-alias ll="eza --icons=always -la"
+alias ll="eza --icons=always -l"
 alias la="eza --icons=always -a"
-alias update="sudo pacman -Syu"
+alias lla="eza --icons=always -la"
+alias update="yay -Syu --noconfirm --ignore spotify; flatpak update -y "
 alias cmatrix='cmatrix -C yellow'
 alias venv='source .venv/bin/activate'  
 alias die='poweroff'
 alias ip-info='curl -S https://ipinfo.io | jq'
 alias spotdl='spotdl --format flac'
-alias time-to-music='cd ~/Music/downloads/ && source .venv/bin/activate'
 alias tty-clock='tty-clock -sSd 1 -C 3'
 alias please='sudo'
 
@@ -72,20 +73,6 @@ setopt INC_APPEND_HISTORY
 # Powerlevel10k Configuration
 # ==============================
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# ==============================
-# Pyenv Configuration
-# ==============================
-export PATH="$HOME/.pyenv/bin:$PATH"
-
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-    
-    if command -v pyenv-virtualenv-init 1>/dev/null 2>&1; then
-        eval "$(pyenv virtualenv-init -)"
-    fi
-fi
 
 # ==============================
 # LS_COLORS (Gruvbox)
@@ -141,6 +128,7 @@ POWERLEVEL9K_PROMPT_CHAR_ERROR_BACKGROUND=235
 
 # Partial pipe failure ⚠️
 POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=214
+POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=235
 
 # --- OS & HOSTNAME ---
 POWERLEVEL9K_OS_ICON_SHOW=true
@@ -155,4 +143,106 @@ POWERLEVEL9K_TIME_FOREGROUND=223
 POWERLEVEL9K_TIME_BACKGROUND=235
 POWERLEVEL9K_RAINBOW=false
 
+# --- COMMAND EXECUTION TIME ---
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=245
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=235
 
+# --- BACKGROUND JOBS ---
+POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=214
+POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=235
+
+# --- LOAD / CPU / RAM ---
+POWERLEVEL9K_LOAD_FOREGROUND=175
+POWERLEVEL9K_LOAD_BACKGROUND=235
+
+POWERLEVEL9K_RAM_FOREGROUND=108
+POWERLEVEL9K_RAM_BACKGROUND=235
+
+POWERLEVEL9K_CPU_FOREGROUND=108
+POWERLEVEL9K_CPU_BACKGROUND=235
+
+# --- PYTHON ---
+POWERLEVEL9K_PYTHON_FOREGROUND=108
+POWERLEVEL9K_PYTHON_BACKGROUND=235
+
+# --- NODE ---
+POWERLEVEL9K_NODE_VERSION_FOREGROUND=108
+POWERLEVEL9K_NODE_VERSION_BACKGROUND=235
+
+# --- JAVA ---
+POWERLEVEL9K_JAVA_FOREGROUND=108
+POWERLEVEL9K_JAVA_BACKGROUND=235
+
+# --- GO ---
+POWERLEVEL9K_GO_VERSION_FOREGROUND=108
+POWERLEVEL9K_GO_VERSION_BACKGROUND=235
+
+# --- RUST ---
+POWERLEVEL9K_RUST_VERSION_FOREGROUND=108
+POWERLEVEL9K_RUST_VERSION_BACKGROUND=235
+
+# --- DOTNET ---
+POWERLEVEL9K_DOTNET_VERSION_FOREGROUND=108
+POWERLEVEL9K_DOTNET_VERSION_BACKGROUND=235
+
+# --- VENV / CONDA ---
+POWERLEVEL9K_VIRTUALENV_FOREGROUND=175
+POWERLEVEL9K_VIRTUALENV_BACKGROUND=235
+
+POWERLEVEL9K_ANACONDA_FOREGROUND=175
+POWERLEVEL9K_ANACONDA_BACKGROUND=235
+
+# --- ASDF ---
+POWERLEVEL9K_ASDF_FOREGROUND=175
+POWERLEVEL9K_ASDF_BACKGROUND=235
+
+# --- AWS ---
+POWERLEVEL9K_AWS_FOREGROUND=208
+POWERLEVEL9K_AWS_BACKGROUND=235
+
+# --- GCP ---
+POWERLEVEL9K_GCP_FOREGROUND=208
+POWERLEVEL9K_GCP_BACKGROUND=235
+
+# --- KUBERNETES ---
+POWERLEVEL9K_KUBECONTEXT_FOREGROUND=214
+POWERLEVEL9K_KUBECONTEXT_BACKGROUND=235
+
+# --- TERRAFORM ---
+POWERLEVEL9K_TERRAFORM_FOREGROUND=214
+POWERLEVEL9K_TERRAFORM_BACKGROUND=235
+
+# --- VCS STATES ---
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND=109
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=214
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=208
+POWERLEVEL9K_VCS_CONFLICTED_FOREGROUND=167
+POWERLEVEL9K_VCS_STAGED_FOREGROUND=142
+
+# --- SEGMENT SEPARATORS ---
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR_FOREGROUND=236
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR_FOREGROUND=236
+
+POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR_FOREGROUND=237
+POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR_FOREGROUND=237
+
+# --- BATTERY ---
+POWERLEVEL9K_BATTERY_FOREGROUND=214
+POWERLEVEL9K_BATTERY_BACKGROUND=235
+
+# --- DISK USAGE ---
+POWERLEVEL9K_DISK_USAGE_FOREGROUND=245
+POWERLEVEL9K_DISK_USAGE_BACKGROUND=235
+
+# ==============================
+# Pyenv Configuration
+# ==============================
+if command -v pyenv >/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+
+  if command -v pyenv-virtualenv-init >/dev/null 2>&1; then
+    eval "$(pyenv virtualenv-init -)"
+  fi
+fi
+
+export PATH=$PATH:/home/rishabh/.spicetify
