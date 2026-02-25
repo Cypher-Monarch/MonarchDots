@@ -135,25 +135,3 @@ Long-term ideas:
 * Automatic GPU detection (Intel / AMD / NVIDIA)
 * Theming presets selectable during install
 
----
-
-If you want a slightly cooler tone that fits the Monarch vibe a bit more, here’s an alternate version:
-
----
-
-## 🛣️ Roadmap
-
-Things I’m experimenting with or planning:
-
-* Smarter bootstrap and hardware detection
-* Dynamic themes and wallpaper automation
-* More Waybar themes and layout presets
-* Optional minimal install mode
-* Laptop / desktop specific tweaks
-
-Future possibilities:
-
-* Multi-distro support
-* GPU-aware configs
-* Install-time theme selection
-
