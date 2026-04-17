@@ -1,6 +1,6 @@
 #!/bin/bash
 
-process=$(pgrep -a openvpn | grep -i openvpn)
+process=$(pgrep -a openvpn | grep -v defunct | grep -i openvpn)
 
 if [ -n "$process" ]; then
   country=$(echo "$process" | grep -oP '[^/]+(?=\.ovpn$)')

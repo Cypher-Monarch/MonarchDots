@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-  background-color: rgba(40, 40, 40, 0.5); /* Gruvbox dark */
-  border-bottom: 1px solid #fabd2f; /* Yellow accent */
+  background-color: rgba(40, 40, 40, 0); /* Gruvbox dark */
+/*  border-bottom: 1px solid #fabd2f;  Yellow accent */
 }
 
 /* Workspace buttons */
@@ -18,7 +18,7 @@ window#waybar {
   padding: 0 10px;
   margin: 4px 3px;
   border-radius: 8px;
-  background-color: rgba(60, 56, 54, 0.6);
+  background-color: rgba(60, 56, 54, 0.70);
   color: #ebdbb2;
   transition: all 0.3s ease;
 }
@@ -56,10 +56,9 @@ window#waybar {
   margin: 4px 6px;
   border-radius: 10px;
 
-  background-color: rgba(60, 56, 54, 0.6); /* more transparent */
+  background-color: rgba(60, 56, 54, 0.9); /* more transparent */
   color: #ebdbb2;
 }
-
 
 #tray menu {
   background-color: #282828;
@@ -67,6 +66,6 @@ window#waybar {
 }
 
 #battery.charging {
-  background-color: rgba(184, 187, 38, 0.2); /* Gruvbox green */
-  color: #b8bb26;
+  background-color: rgba(184, 187, 38, 0.9); /* Gruvbox green */
+  color: #ebdbb2;
 }

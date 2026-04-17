@@ -1,0 +1,28 @@
+[INFO] Saved and patched config for Japan
+[INFO] Saved and patched config for United States
+[INFO] Saved and patched config for Germany
+[INFO] Connecting to Germany at Thu Aug  7 08:34:45 PM IST 2025
+2025-08-07 20:34:48 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-07 20:34:48 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-07 20:34:48 library versions: OpenSSL 3.5.1 1 Jul 2025, LZO 2.10
+2025-08-07 20:34:48 DCO version: N/A
+2025-08-07 20:34:48 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-07 20:34:48 TCP/UDP: Preserving recently used remote address: [AF_INET]37.201.212.181:64905
+2025-08-07 20:34:48 Socket Buffers: R=[212992->212992] S=[212992->212992]
+2025-08-07 20:34:48 UDPv4 link local: (not bound)
+2025-08-07 20:34:48 UDPv4 link remote: [AF_INET]37.201.212.181:64905
+[INFO] VPN connected to Germany with IP: 122.172.82.3
+2025-08-07 20:34:56 event_wait : Interrupted system call (fd=-1,code=4)
+2025-08-07 20:34:56 SIGHUP[hard,] received, process restarting
+2025-08-07 20:34:56 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-07 20:34:56 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-07 20:34:56 library versions: OpenSSL 3.5.1 1 Jul 2025, LZO 2.10
+2025-08-07 20:34:56 DCO version: N/A
+2025-08-07 20:34:56 Restart pause, 1 second(s)
+2025-08-07 20:34:57 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-07 20:34:57 TCP/UDP: Preserving recently used remote address: [AF_INET]37.201.212.181:64905
+2025-08-07 20:34:57 Socket Buffers: R=[212992->212992] S=[212992->212992]
+2025-08-07 20:34:57 UDPv4 link local: (not bound)
+2025-08-07 20:34:57 UDPv4 link remote: [AF_INET]37.201.212.181:64905
+2025-08-07 20:35:16 event_wait : Interrupted system call (fd=-1,code=4)
+2025-08-07 20:35:16 SIGTERM[hard,] received, process exiting

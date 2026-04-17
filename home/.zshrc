@@ -1,7 +1,7 @@
 # ==============================
 # ZSH / Zinit Setup
 # ==============================
-export ZSH="$HOME/.zinit"
+export ZSH="$HOME/.zinit/"
 export TERM=xterm-256color
 export EDITOR=nvim
 export ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -46,14 +46,16 @@ alias ls="eza --icons=always"
 alias ll="eza --icons=always -l"
 alias la="eza --icons=always -a"
 alias lla="eza --icons=always -la"
-alias update="yay -Syu --noconfirm --ignore spotify; flatpak update -y "
+alias update="yay -Syu --noconfirm ; flatpak update -y "
 alias cmatrix='cmatrix -C yellow'
 alias venv='source .venv/bin/activate'  
 alias die='poweroff'
 alias ip-info='curl -S https://ipinfo.io | jq'
 alias spotdl='spotdl --format flac'
+alias enable-print='sudo systemctl start cups && sudo lpadmin -p HP_LaserJet_Professional_M1213nf_MFP -E'
 alias tty-clock='tty-clock -sSd 1 -C 3'
 alias please='sudo'
+alias start-homies='cd ~/.minecraft-servers/homies/ && java -Xmx2G -Xms2G -jar ~/.minecraft-servers/homies/server.jar nogui'
 
 # ==============================
 # ZSH History 📜

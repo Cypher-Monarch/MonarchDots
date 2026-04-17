@@ -50,7 +50,7 @@ fi
 
 # Check if waybar-disabled file exists
 if [ ! -f $HOME/.config/misc/settings/waybar-disabled ]; then
-  pgerp -x waybar >/dev/null || waybar -c ~/.config/waybar/themes${arrThemes[0]}/$config_file -s ~/.config/waybar/themes${arrThemes[1]}/$style_file &
+  pgrep -x waybar >/dev/null || waybar -c ~/.config/waybar/themes${arrThemes[0]}/$config_file -s ~/.config/waybar/themes${arrThemes[1]}/$style_file &
 else
   echo ":: Waybar disabled"
 fi

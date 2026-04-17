@@ -1,0 +1,136 @@
+[WARN] Using cached CSV at Thu Jul 31 06:23:22 PM IST 2025
+[INFO] Saved and patched config for United States
+[INFO] Saved and patched config for Japan
+[INFO] Saved and patched config for France
+[INFO] Connecting to United States at Thu Jul 31 06:23:24 PM IST 2025
+2025-07-31 18:23:27 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-07-31 18:23:27 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-07-31 18:23:27 library versions: OpenSSL 3.5.1 1 Jul 2025, LZO 2.10
+2025-07-31 18:23:27 DCO version: N/A
+2025-07-31 18:23:27 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:27 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:27 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:27 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:27 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:27 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:27 Restart pause, 1 second(s)
+2025-07-31 18:23:28 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:28 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:28 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:28 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:28 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:28 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:28 Restart pause, 1 second(s)
+2025-07-31 18:23:29 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:29 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:29 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:29 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:29 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:29 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:29 Restart pause, 1 second(s)
+[WARN] Connected, but IP fetch failed.
+2025-07-31 18:23:30 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:30 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:30 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:30 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:30 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:30 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:30 Restart pause, 1 second(s)
+2025-07-31 18:23:31 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:31 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:31 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:31 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:31 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:31 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:31 Restart pause, 2 second(s)
+2025-07-31 18:23:33 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:33 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:33 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:33 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:33 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:33 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:33 Restart pause, 4 second(s)
+2025-07-31 18:23:37 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:37 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:37 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:37 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:37 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:37 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:37 Restart pause, 8 second(s)
+2025-07-31 18:23:45 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:23:45 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:45 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:23:45 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:23:45 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:23:45 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:23:45 Restart pause, 16 second(s)
+2025-07-31 18:24:01 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:24:01 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:24:01 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:24:01 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:24:01 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:24:01 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:24:01 Restart pause, 32 second(s)
+2025-07-31 18:24:33 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:24:33 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:24:33 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:24:33 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:24:33 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:24:33 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:24:33 Restart pause, 64 second(s)
+2025-07-31 18:25:37 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:25:37 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:25:37 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:25:37 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:25:37 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:25:37 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:25:37 Restart pause, 128 second(s)
+2025-07-31 18:27:45 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:27:45 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:27:45 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:27:45 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:27:45 TCP: connect to [AF_INET]47.153.191.152:1232 failed: Network is unreachable
+2025-07-31 18:27:45 SIGUSR1[connection failed(soft),connection-failed] received, process restarting
+2025-07-31 18:27:45 Restart pause, 256 second(s)
+2025-07-31 18:32:01 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-07-31 18:32:01 TCP/UDP: Preserving recently used remote address: [AF_INET]47.153.191.152:1232
+2025-07-31 18:32:01 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-07-31 18:32:01 Attempting to establish TCP connection with [AF_INET]47.153.191.152:1232
+2025-07-31 18:32:01 TCP connection established with [AF_INET]47.153.191.152:1232
+2025-07-31 18:32:01 TCPv4_CLIENT link local: (not bound)
+2025-07-31 18:32:01 TCPv4_CLIENT link remote: [AF_INET]47.153.191.152:1232
+2025-07-31 18:32:02 TLS: Initial packet from [AF_INET]47.153.191.152:1232, sid=97f376c4 59477c11
+2025-07-31 18:32:03 VERIFY OK: depth=2, C=US, O=Internet Security Research Group, CN=ISRG Root X1
+2025-07-31 18:32:03 VERIFY OK: depth=1, C=US, O=Let's Encrypt, CN=R10
+2025-07-31 18:32:03 VERIFY OK: depth=0, CN=opengw.net
+2025-07-31 18:32:03 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, peer certificate: 2048 bits RSA, signature: RSA-SHA256, peer temporary key: 253 bits X25519
+2025-07-31 18:32:03 [opengw.net] Peer Connection Initiated with [AF_INET]47.153.191.152:1232
+2025-07-31 18:32:03 TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+2025-07-31 18:32:03 TLS: tls_multi_process: initial untrusted session promoted to trusted
+2025-07-31 18:32:04 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+2025-07-31 18:32:04 PUSH: Received control message: 'PUSH_REPLY,ping 3,ping-restart 10,ifconfig 10.211.1.169 10.211.1.170,dhcp-option DNS 10.211.254.254,dhcp-option DNS 8.8.8.8,route-gateway 10.211.1.170,redirect-gateway def1'
+2025-07-31 18:32:04 OPTIONS IMPORT: --ifconfig/up options modified
+2025-07-31 18:32:04 OPTIONS IMPORT: route options modified
+2025-07-31 18:32:04 OPTIONS IMPORT: route-related options modified
+2025-07-31 18:32:04 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+2025-07-31 18:32:04 Using peer cipher 'AES-128-CBC'
+2025-07-31 18:32:04 net_route_v4_best_gw query: dst 0.0.0.0
+2025-07-31 18:32:04 net_route_v4_best_gw result: via 10.133.198.129 dev enp0s20f0u4
+2025-07-31 18:32:04 ROUTE_GATEWAY 10.133.198.129/255.255.255.0 IFACE=enp0s20f0u4 HWADDR=02:2f:1d:69:18:18
+2025-07-31 18:32:04 TUN/TAP device tun0 opened
+2025-07-31 18:32:04 net_iface_mtu_set: mtu 1500 for tun0
+2025-07-31 18:32:04 net_iface_up: set tun0 up
+2025-07-31 18:32:04 net_addr_ptp_v4_add: 10.211.1.169 peer 10.211.1.170 dev tun0
+2025-07-31 18:32:04 net_route_v4_add: 47.153.191.152/32 via 10.133.198.129 dev [NULL] table 0 metric -1
+2025-07-31 18:32:04 net_route_v4_add: 0.0.0.0/1 via 10.211.1.170 dev [NULL] table 0 metric -1
+2025-07-31 18:32:04 net_route_v4_add: 128.0.0.0/1 via 10.211.1.170 dev [NULL] table 0 metric -1
+2025-07-31 18:32:04 Initialization Sequence Completed
+2025-07-31 18:32:04 Data Channel: cipher 'AES-128-CBC', auth 'SHA1'
+2025-07-31 18:32:04 Timers: ping 3, ping-restart 10
+2025-07-31 18:32:24 event_wait : Interrupted system call (fd=-1,code=4)
+2025-07-31 18:32:24 net_route_v4_del: 47.153.191.152/32 via 10.133.198.129 dev [NULL] table 0 metric -1
+2025-07-31 18:32:24 net_route_v4_del: 0.0.0.0/1 via 10.211.1.170 dev [NULL] table 0 metric -1
+2025-07-31 18:32:24 net_route_v4_del: 128.0.0.0/1 via 10.211.1.170 dev [NULL] table 0 metric -1
+2025-07-31 18:32:24 Closing TUN/TAP interface
+2025-07-31 18:32:24 net_addr_ptp_v4_del: 10.211.1.169 dev tun0
+2025-07-31 18:32:24 SIGTERM[hard,] received, process exiting

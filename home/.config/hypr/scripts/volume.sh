@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STEP=1
+STEP=5
 SINK="@DEFAULT_SINK@"
 
 get_vol() {

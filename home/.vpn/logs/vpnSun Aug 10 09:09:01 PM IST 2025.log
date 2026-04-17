@@ -1,0 +1,49 @@
+[INFO] Saved and patched config for Japan
+[INFO] Connecting to Japan at Sun Aug 10 09:09:24 PM IST 2025
+2025-08-10 21:09:27 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-10 21:09:27 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-10 21:09:27 library versions: OpenSSL 3.5.2 5 Aug 2025, LZO 2.10
+2025-08-10 21:09:27 DCO version: N/A
+2025-08-10 21:09:27 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-10 21:09:27 TCP/UDP: Preserving recently used remote address: [AF_INET]219.100.37.96:443
+2025-08-10 21:09:27 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-08-10 21:09:27 Attempting to establish TCP connection with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:28 TCP connection established with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:28 TCPv4_CLIENT link local: (not bound)
+2025-08-10 21:09:28 TCPv4_CLIENT link remote: [AF_INET]219.100.37.96:443
+2025-08-10 21:09:29 TLS: Initial packet from [AF_INET]219.100.37.96:443, sid=7956a64a 5660a3fb
+[INFO] VPN connected to Japan with IP: 122.172.83.193
+2025-08-10 21:09:31 VERIFY OK: depth=2, C=US, O=Internet Security Research Group, CN=ISRG Root X1
+2025-08-10 21:09:31 VERIFY OK: depth=1, C=US, O=Let's Encrypt, CN=R10
+2025-08-10 21:09:31 VERIFY OK: depth=0, CN=opengw.net
+2025-08-10 21:09:34 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, peer certificate: 2048 bits RSA, signature: RSA-SHA256, peer temporary key: 253 bits X25519
+2025-08-10 21:09:34 [opengw.net] Peer Connection Initiated with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:34 TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+2025-08-10 21:09:34 TLS: tls_multi_process: initial untrusted session promoted to trusted
+2025-08-10 21:09:35 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+2025-08-10 21:09:38 event_wait : Interrupted system call (fd=-1,code=4)
+2025-08-10 21:09:38 SIGHUP[hard,] received, process restarting
+2025-08-10 21:09:38 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-10 21:09:38 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-10 21:09:38 library versions: OpenSSL 3.5.2 5 Aug 2025, LZO 2.10
+2025-08-10 21:09:38 DCO version: N/A
+2025-08-10 21:09:38 Restart pause, 2 second(s)
+2025-08-10 21:09:40 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-10 21:09:40 TCP/UDP: Preserving recently used remote address: [AF_INET]219.100.37.96:443
+2025-08-10 21:09:40 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-08-10 21:09:40 Attempting to establish TCP connection with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:40 TCP connection established with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:40 TCPv4_CLIENT link local: (not bound)
+2025-08-10 21:09:40 TCPv4_CLIENT link remote: [AF_INET]219.100.37.96:443
+2025-08-10 21:09:40 TLS: Initial packet from [AF_INET]219.100.37.96:443, sid=8318ffab 3428641a
+2025-08-10 21:09:41 VERIFY OK: depth=2, C=US, O=Internet Security Research Group, CN=ISRG Root X1
+2025-08-10 21:09:41 VERIFY OK: depth=1, C=US, O=Let's Encrypt, CN=R10
+2025-08-10 21:09:41 VERIFY OK: depth=0, CN=opengw.net
+2025-08-10 21:09:42 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, peer certificate: 2048 bits RSA, signature: RSA-SHA256, peer temporary key: 253 bits X25519
+2025-08-10 21:09:42 [opengw.net] Peer Connection Initiated with [AF_INET]219.100.37.96:443
+2025-08-10 21:09:42 TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+2025-08-10 21:09:42 TLS: tls_multi_process: initial untrusted session promoted to trusted
+2025-08-10 21:09:43 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+2025-08-10 21:09:48 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+2025-08-10 21:09:49 AUTH: Received control message: AUTH_FAILED
+2025-08-10 21:09:49 SIGTERM[soft,auth-failure] received, process exiting

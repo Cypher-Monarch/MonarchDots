@@ -1,0 +1,74 @@
+[INFO] Saved and patched config for Japan
+[INFO] Saved and patched config for United States
+[INFO] Saved and patched config for Canada
+[INFO] Connecting to Japan at Tue Aug 26 10:06:04 PM IST 2025
+2025-08-26 22:06:06 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-26 22:06:06 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-26 22:06:06 library versions: OpenSSL 3.5.2 5 Aug 2025, LZO 2.10
+2025-08-26 22:06:06 DCO version: N/A
+2025-08-26 22:06:06 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-26 22:06:06 TCP/UDP: Preserving recently used remote address: [AF_INET]219.100.37.96:443
+2025-08-26 22:06:06 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-08-26 22:06:06 Attempting to establish TCP connection with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:06 TCP connection established with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:06 TCPv4_CLIENT link local: (not bound)
+2025-08-26 22:06:06 TCPv4_CLIENT link remote: [AF_INET]219.100.37.96:443
+2025-08-26 22:06:07 TLS: Initial packet from [AF_INET]219.100.37.96:443, sid=69156166 b9439209
+2025-08-26 22:06:07 VERIFY OK: depth=2, C=US, O=Internet Security Research Group, CN=ISRG Root X1
+2025-08-26 22:06:07 VERIFY OK: depth=1, C=US, O=Let's Encrypt, CN=R10
+2025-08-26 22:06:07 VERIFY OK: depth=0, CN=opengw.net
+2025-08-26 22:06:07 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, peer certificate: 2048 bits RSA, signature: RSA-SHA256, peer temporary key: 253 bits X25519
+2025-08-26 22:06:07 [opengw.net] Peer Connection Initiated with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:07 TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+2025-08-26 22:06:07 TLS: tls_multi_process: initial untrusted session promoted to trusted
+2025-08-26 22:06:09 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+[INFO] VPN connected to Japan with IP: 122.172.82.119
+2025-08-26 22:06:12 event_wait : Interrupted system call (fd=-1,code=4)
+2025-08-26 22:06:12 SIGHUP[hard,] received, process restarting
+2025-08-26 22:06:12 Note: cipher 'AES-128-CBC' in --data-ciphers is not supported by ovpn-dco, disabling data channel offload.
+2025-08-26 22:06:12 OpenVPN 2.6.14 [git:makepkg/f588592ee6c6323b+] x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] [DCO] built on Apr  2 2025
+2025-08-26 22:06:12 library versions: OpenSSL 3.5.2 5 Aug 2025, LZO 2.10
+2025-08-26 22:06:12 DCO version: N/A
+2025-08-26 22:06:12 Restart pause, 2 second(s)
+2025-08-26 22:06:14 WARNING: No server certificate verification method has been enabled.  See http://openvpn.net/howto.html#mitm for more info.
+2025-08-26 22:06:14 TCP/UDP: Preserving recently used remote address: [AF_INET]219.100.37.96:443
+2025-08-26 22:06:14 Socket Buffers: R=[131072->131072] S=[16384->16384]
+2025-08-26 22:06:14 Attempting to establish TCP connection with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:14 TCP connection established with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:14 TCPv4_CLIENT link local: (not bound)
+2025-08-26 22:06:14 TCPv4_CLIENT link remote: [AF_INET]219.100.37.96:443
+2025-08-26 22:06:15 TLS: Initial packet from [AF_INET]219.100.37.96:443, sid=4b5b0897 11504106
+2025-08-26 22:06:15 VERIFY OK: depth=2, C=US, O=Internet Security Research Group, CN=ISRG Root X1
+2025-08-26 22:06:15 VERIFY OK: depth=1, C=US, O=Let's Encrypt, CN=R10
+2025-08-26 22:06:15 VERIFY OK: depth=0, CN=opengw.net
+2025-08-26 22:06:16 Control Channel: TLSv1.3, cipher TLSv1.3 TLS_AES_256_GCM_SHA384, peer certificate: 2048 bits RSA, signature: RSA-SHA256, peer temporary key: 253 bits X25519
+2025-08-26 22:06:16 [opengw.net] Peer Connection Initiated with [AF_INET]219.100.37.96:443
+2025-08-26 22:06:16 TLS: move_session: dest=TM_ACTIVE src=TM_INITIAL reinit_src=1
+2025-08-26 22:06:16 TLS: tls_multi_process: initial untrusted session promoted to trusted
+2025-08-26 22:06:17 SENT CONTROL [opengw.net]: 'PUSH_REQUEST' (status=1)
+2025-08-26 22:06:20 PUSH: Received control message: 'PUSH_REPLY,ping 3,ping-restart 10,ifconfig 10.238.144.141 10.238.144.142,dhcp-option DNS 10.238.254.254,dhcp-option DNS 8.8.8.8,route-gateway 10.238.144.142,redirect-gateway def1'
+2025-08-26 22:06:20 OPTIONS IMPORT: --ifconfig/up options modified
+2025-08-26 22:06:20 OPTIONS IMPORT: route options modified
+2025-08-26 22:06:20 OPTIONS IMPORT: route-related options modified
+2025-08-26 22:06:20 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+2025-08-26 22:06:20 Using peer cipher 'AES-128-CBC'
+2025-08-26 22:06:20 net_route_v4_best_gw query: dst 0.0.0.0
+2025-08-26 22:06:20 net_route_v4_best_gw result: via 192.168.1.1 dev wlan0
+2025-08-26 22:06:20 ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=wlan0 HWADDR=a8:43:a4:62:1c:70
+2025-08-26 22:06:20 TUN/TAP device tun0 opened
+2025-08-26 22:06:20 net_iface_mtu_set: mtu 1500 for tun0
+2025-08-26 22:06:20 net_iface_up: set tun0 up
+2025-08-26 22:06:20 net_addr_ptp_v4_add: 10.238.144.141 peer 10.238.144.142 dev tun0
+2025-08-26 22:06:20 net_route_v4_add: 219.100.37.96/32 via 192.168.1.1 dev [NULL] table 0 metric -1
+2025-08-26 22:06:20 net_route_v4_add: 0.0.0.0/1 via 10.238.144.142 dev [NULL] table 0 metric -1
+2025-08-26 22:06:20 net_route_v4_add: 128.0.0.0/1 via 10.238.144.142 dev [NULL] table 0 metric -1
+2025-08-26 22:06:20 Initialization Sequence Completed
+2025-08-26 22:06:20 Data Channel: cipher 'AES-128-CBC', auth 'SHA1'
+2025-08-26 22:06:20 Timers: ping 3, ping-restart 10
+2025-08-26 22:07:30 event_wait : Interrupted system call (fd=-1,code=4)
+2025-08-26 22:07:30 net_route_v4_del: 219.100.37.96/32 via 192.168.1.1 dev [NULL] table 0 metric -1
+2025-08-26 22:07:30 net_route_v4_del: 0.0.0.0/1 via 10.238.144.142 dev [NULL] table 0 metric -1
+2025-08-26 22:07:30 net_route_v4_del: 128.0.0.0/1 via 10.238.144.142 dev [NULL] table 0 metric -1
+2025-08-26 22:07:30 Closing TUN/TAP interface
+2025-08-26 22:07:30 net_addr_ptp_v4_del: 10.238.144.141 dev tun0
+2025-08-26 22:07:30 SIGTERM[hard,] received, process exiting
