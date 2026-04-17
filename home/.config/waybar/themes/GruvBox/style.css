@@ -67,5 +67,5 @@ window#waybar {
 
 #battery.charging {
   background-color: rgba(184, 187, 38, 0.9); /* Gruvbox green */
-  color: #ebdbb2;
+  color: #3c3836;
 }
