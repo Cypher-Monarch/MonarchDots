@@ -247,4 +247,4 @@ if command -v pyenv >/dev/null 2>&1; then
   fi
 fi
 
-export PATH=$PATH:/home/rishabh/.spicetify
+export PATH=$PATH:/home/rishabh/.spicetify:/home/rishabh/.local/bin
