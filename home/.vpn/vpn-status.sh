@@ -16,6 +16,7 @@ if [ -n "$process" ]; then
   Korea\ Republic\ of) flag="🇰🇷" ;;
   Russian\ Federation) flag="🇷🇺" ;;
   Thailand) flag="🇹🇭" ;;
+  China) flag="🇨🇳" ;;
   *) flag="🌐" ;;
   esac
 
