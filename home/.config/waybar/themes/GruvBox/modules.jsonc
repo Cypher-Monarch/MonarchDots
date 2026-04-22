@@ -262,14 +262,4 @@
     "interval": 60,
     "icon": false,
   },
-  // Idle Inhibator
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "tooltip": true,
-    "format-icons": {
-      "activated": "",
-      "deactivated": "",
-    },
-    "on-click-right": "hyprlock",
-  },
 }
