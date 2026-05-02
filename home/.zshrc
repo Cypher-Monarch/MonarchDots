@@ -56,6 +56,8 @@ alias enable-print='sudo systemctl start cups && sudo lpadmin -p HP_LaserJet_Pro
 alias tty-clock='tty-clock -sSd 1 -C 3'
 alias please='sudo'
 alias start-homies='cd ~/.minecraft-servers/homies/ && java -Xmx2G -Xms2G -jar ~/.minecraft-servers/homies/server.jar nogui'
+alias bmi='brightnessctl set 0% || sudo brightnessctl set 0%'
+alias bma='brightnessctl set 100% || sudo brightnessctl set 100%'
 
 # ==============================
 # ZSH History 📜
