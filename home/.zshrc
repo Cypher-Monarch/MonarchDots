@@ -50,7 +50,7 @@ alias lla="eza --icons=always -la"
 alias update="yay -Syu --noconfirm ; flatpak update -y "
 alias cmatrix='cmatrix -C yellow'
 alias venv='source .venv/bin/activate'  
-alias die='poweroff'
+alias die='poweroff || sudo poweroff; exit'
 alias ip-info='curl -S https://ipinfo.io | jq'
 alias spotdl='spotdl --format flac'
 alias enable-print='sudo systemctl start cups && sudo lpadmin -p HP_LaserJet_Professional_M1213nf_MFP -E'
