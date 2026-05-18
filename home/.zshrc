@@ -254,8 +254,12 @@ export PATH=$PATH:/home/rishabh/.spicetify:/home/rishabh/.local/bin
 
 # Functions
 
-fix_metadata(){
-  for f in *.flac; do                                  
-    ffmpeg -i "$f" -map 0:a -map 0:v -c:a copy -c:v png -vf "crop='min(iw,ih)':'min(iw,ih)'" -disposition:v attached_pic "tmp_$f" && mv "tmp_$f" "$f"
+fix_metadata() {
+  find . -type f -name "*.flac" | while read -r f; do
+    tmp="$(dirname "$f")/tmp_$(basename "$f")"
+    ffmpeg -i "$f" -map 0:a -map 0:v -c:a copy -c:v png -vf "crop='min(iw,ih)':'min(iw,ih)'" -disposition:v attached_pic "$tmp" && mv "$tmp" "$f"
   done
+}
+music_down(){
+  yt-dlp -o "%(artist)s/%(album)s/%(title)s.%(ext)s" -x --embed-metadata --embed-thumbnail --audio-format flac "$1"; fix_metadata
 }

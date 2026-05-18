@@ -119,7 +119,7 @@ NORMAL 00;38;5;250 # no color code at all
 FILE   00;38;5;223 # regular file: use no color at all
 RESET  00;38;5;172 # reset to normal color
 DIR    00;38;5;166 # directory
-LINK   target      # symbolic link. (If you set this to 'target' instead of a
+LINK   00;38;5;166      # symbolic link. (If you set this to 'target' instead of a
                    # numerical value, the color is as for the file pointed to.)
 
 MULTIHARDLINK         04        # regular file with more than one link
