@@ -251,3 +251,11 @@ if command -v pyenv >/dev/null 2>&1; then
 fi
 
 export PATH=$PATH:/home/rishabh/.spicetify:/home/rishabh/.local/bin
+
+# Functions
+
+fix_metadata(){
+  for f in *.flac; do                                  
+    ffmpeg -i "$f" -map 0:a -map 0:v -c:a copy -c:v png -vf "crop='min(iw,ih)':'min(iw,ih)'" -disposition:v attached_pic "tmp_$f" && mv "tmp_$f" "$f"
+  done
+}
