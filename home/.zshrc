@@ -260,6 +260,19 @@ fix_metadata() {
     ffmpeg -i "$f" -map 0:a -map 0:v -c:a copy -c:v png -vf "crop='min(iw,ih)':'min(iw,ih)'" -disposition:v attached_pic "$tmp" && mv "$tmp" "$f"
   done
 }
+
 music_down(){
   yt-dlp -o "%(artist)s/%(album)s/%(title)s.%(ext)s" -x --embed-metadata --embed-thumbnail --audio-format flac "$1"; fix_metadata
+}
+
+podcast_down(){
+  yt-dlp \
+  -o "%(channel)s/%(upload_date>%Y-%m-%d)s · %(title).240B.%(ext)s" \
+  -x \
+  --embed-metadata \
+  --embed-thumbnail \
+  --parse-metadata "channel:album" \
+  --parse-metadata "channel:album_artist" \
+  --audio-format flac \
+  "$1"
 }
