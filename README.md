@@ -44,7 +44,9 @@ Powerlevel10k, Zinit, FZF, Gruvbox LS_COLORS, and Pyenv.
 Run the bootstrap installer:
 
 ```bash
-curl -fsSL https://github.com/Cypher-Monarch/MonarchDots/releases/latest/download/bootstrap-v1.0.sh | bash
+curl -fsSL https://github.com/Cypher-Monarch/MonarchDots/releases/latest/download/bootstrap-v1.0.sh > install.sh
+chmod +X install.sh
+./install.sh
 ```
 
 This will:
