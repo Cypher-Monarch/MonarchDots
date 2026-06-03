@@ -1,9 +1,9 @@
 #!/bin/bash
-#    ___                    
+#    ___
 #   / _ \___ _    _____ ____
 #  / ___/ _ \ |/|/ / -_) __/
-# /_/   \___/__,__/\__/_/   
-#                           
+# /_/   \___/__,__/\__/_/
+#
 
 terminate_clients() {
   TIMEOUT=5
@@ -40,7 +40,7 @@ if [[ "$1" == "exit" ]]; then
   echo ":: Exit"
   terminate_clients
   sleep 0.5
-  hyprctl dispatch exit
+  hyprctl dispatch 'hl.dsp.exit()'
   sleep 2
 fi
 
