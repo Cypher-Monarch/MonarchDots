@@ -47,7 +47,7 @@ alias ls="eza --icons=always"
 alias ll="eza --icons=always -l"
 alias la="eza --icons=always -a"
 alias lla="eza --icons=always -la"
-alias update="yay -Syu --noconfirm ; flatpak update -y "
+alias update="yay -Syu --noconfirm ; sudo flatpak update -y "
 alias cmatrix='cmatrix -C yellow'
 alias venv='source .venv/bin/activate'  
 alias die='poweroff || sudo poweroff; exit'
