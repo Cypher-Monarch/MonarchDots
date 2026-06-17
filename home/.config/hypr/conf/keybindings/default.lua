@@ -76,10 +76,7 @@ hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd("hyprctl reload"))
 hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/toggle-animations.sh"))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/screenshot.sh"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grimblast copy area"))
-hl.bind(
-	mainMod .. " + CTRL + S",
-	hl.dsp.exec_cmd('grimblast save area "/home/rishabh/Pictures/Screenshots/screenshot_$(date +%d%m%Y_%H%M%S).png"')
-)
+hl.bind(mainMod .. " + CTRL + S", hl.dsp.exec_cmd("grimblast copy screen"))
 hl.bind(mainMod .. " + CTRL + Q", hl.dsp.exec_cmd("~/.config/misc/scripts/wlogout.sh"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper --random"))
 hl.bind(mainMod .. " + CTRL + W", hl.dsp.exec_cmd("waypaper"))
