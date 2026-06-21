@@ -39,6 +39,7 @@ hl.bind(
 	hl.dsp.exec_cmd('rofimoji --selector rofi --selector-args "-theme ~/.config/rofi/config-emoji.rasi"')
 )
 hl.bind("ALT + K", hl.dsp.exec_cmd("env XDG_MENU_PREFIX=arch- kbuildsycoca6"))
+hl.bind(mainMod .. " + ALT + N", hl.dsp.exec_cmd("~/.local/bin/nf-glyph"))
 
 -- Windows
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())

@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+JSON="$HOME/.local/share/nerd-fonts.json"
+
+selection=$(
+  jq -r '
+    def titlecase:
+      split(" ")
+      | map(if length > 0 then (.[0:1] | ascii_upcase) + .[1:] else . end)
+      | join(" ");
+
+    def prettify_name($raw):
+      $raw
+      | gsub("_"; " ")
+      | titlecase
+      | gsub("\\bGithub\\b"; "GitHub")
+      | gsub("\\bJavascript\\b"; "JavaScript")
+      | gsub("\\bTypescript\\b"; "TypeScript")
+      | gsub("\\bNeovim\\b"; "Neovim")
+      | gsub("\\bPdf\\b"; "PDF")
+      | gsub("\\bXml\\b"; "XML")
+      | gsub("\\bCss\\b"; "CSS")
+      | gsub("\\bHtml\\b"; "HTML")
+      | gsub("\\bJson\\b"; "JSON")
+      | gsub("\\bYaml\\b"; "YAML")
+      | gsub("\\bToml\\b"; "TOML")
+      | gsub("\\bLua\\b"; "Lua")
+      | gsub("\\bCpp\\b"; "C++")
+      | gsub("\\bCsharp\\b"; "C#");
+
+    to_entries[]
+    | select(.key != "METADATA")
+    | .key as $full
+    | ($full | split("-")[0]) as $set
+    | ($full | sub("^[^-]+-"; "")) as $raw_name
+    | (prettify_name($raw_name)) as $pretty_name
+    | .value.code as $code
+    | .value.char as $char
+
+    # visible cols:
+    # 1 glyph
+    # 2 pretty name
+    #
+    # hidden cols:
+    # 3 full raw key
+    # 4 set/prefix
+    # 5 codepoint
+    #
+    # rofi still searches the whole row, but display-columns only shows 1 and 2
+    | "\($char)\t\($pretty_name)\t\($full)\t\($set)\t\($code)"
+  ' "$JSON" | rofi -dmenu -i -p "Glyph" -display-columns 1,2 -config ~/.config/rofi/config-emoji.rasi
+)
+
+[ -z "$selection" ] && exit 0
+
+glyph=$(printf '%s\n' "$selection" | cut -f1)
+full_name=$(printf '%s\n' "$selection" | cut -f3)
+code=$(printf '%s\n' "$selection" | cut -f5)
+
+action=$(
+  printf "Type glyph\nCopy glyph\nCopy full name\nCopy codepoint\nCopy unicode escape" |
+    rofi -dmenu -i -p "$full_name" -config ~/.config/rofi/config-emoji.rasi
+)
+
+[ -z "$action" ] && exit 0
+
+case "$action" in
+"Copy glyph")
+  printf '%s' "$glyph" | wl-copy
+  ;;
+"Copy full name")
+  printf '%s' "$full_name" | wl-copy
+  ;;
+"Copy codepoint")
+  printf '%s' "$code" | wl-copy
+  ;;
+"Copy unicode escape")
+  printf '\\u%s' "$code" | wl-copy
+  ;;
+"Type glyph")
+  command -v wtype >/dev/null && wtype "$glyph"
+  ;;
+esac
