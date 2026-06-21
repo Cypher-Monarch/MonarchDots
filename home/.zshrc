@@ -262,7 +262,14 @@ fix_metadata() {
 }
 
 music_down(){
-  yt-dlp -o "%(artist)s/%(album)s/%(title)s.%(ext)s" -x --embed-metadata --embed-thumbnail --audio-format flac "$1"; fix_metadata
+  old=$(pwd)
+  tmp=$(mktemp -d)
+  cd '$tmp'
+  yt-dlp -o "%(artist)s/%(album)s/%(title)s.%(ext)s" -x --embed-metadata --embed-thumbnail --audio-format flac "$1"
+  fix_metadata
+  mv ./* ~/Music
+  cd '$old'
+  rmdir '$tmp'
 }
 
 podcast_down(){
