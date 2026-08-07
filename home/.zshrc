@@ -283,3 +283,7 @@ podcast_down(){
   --audio-format flac \
   "$1"
 }
+
+cgstat(){
+  printf '{"action": "STATUS"}' | nc -U /run/cyphergate/cyphergated.sock
+}

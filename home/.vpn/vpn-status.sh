@@ -1,20 +1,19 @@
 #!/bin/bash
 
-process=$(pgrep -a openvpn | grep -v defunct | grep -i openvpn)
+status=$(printf '{"action": "STATUS"}' | nc -U /run/cyphergate/cyphergated.sock)
 
-if [ -n "$process" ]; then
-  country=$(echo "$process" | grep -oP '[^/]+(?=\.ovpn$)')
-  country=${country//_/ }
+if [[ $(jq -r '.status' <<<"$status") == "CONNECTED" ]]; then
+  country=$(jq -r '.country' <<<"$status")
 
   case "$country" in
   Japan) flag="🇯🇵" ;;
-  United\ States) flag="🇺🇸" ;;
+  "United States") flag="🇺🇸" ;;
   India) flag="🇮🇳" ;;
   Germany) flag="🇩🇪" ;;
   Brazil) flag="🇧🇷" ;;
-  Viet\ Nam) flag="🇻🇳" ;;
-  Korea\ Republic\ of) flag="🇰🇷" ;;
-  Russian\ Federation) flag="🇷🇺" ;;
+  "Viet Nam") flag="🇻🇳" ;;
+  "Korea Republic of") flag="🇰🇷" ;;
+  "Russian Federation") flag="🇷🇺" ;;
   Thailand) flag="🇹🇭" ;;
   China) flag="🇨🇳" ;;
   *) flag="🌐" ;;
