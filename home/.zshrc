@@ -8,6 +8,7 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Wayland setup for SSH
 if [[ -n $SSH_CONNECTION && $TTY == /dev/pts/* ]]; then
+    clear
     export DISPLAY=:1
     export XDG_RUNTIME_DIR=/run/user/1000
     export WAYLAND_DISPLAY=wayland-1
@@ -267,9 +268,9 @@ music_down(){
   cd "$temp"
   yt-dlp -o "%(artist)s/%(album)s/%(title)s.%(ext)s" -x --embed-metadata --embed-thumbnail --audio-format flac "$1"
   fix_metadata
-  cp -r ./* ~/Music
-  cd "$old"
-  rm -fr "$temp"
+#  cp -r ./* ~/Music
+#  cd "$old"
+#  rm -fr "$temp"
 }
 
 podcast_down(){
