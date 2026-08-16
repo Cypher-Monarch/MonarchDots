@@ -36,6 +36,10 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light jeffreytse/zsh-vi-mode
 
+# Completions
+autoload -Uz compinit
+compinit
+
 # FZF integration if installed
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
 
