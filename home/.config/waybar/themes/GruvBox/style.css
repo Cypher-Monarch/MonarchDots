@@ -38,7 +38,7 @@ window#waybar {
 #disk,
 #custom-exit,
 #custom-notification,
-#custom-vpn,
+#custom-vpn.disconnected,
 #bluetooth,
 #clock,
 #cpu,
@@ -58,6 +58,18 @@ window#waybar {
 
   background-color: rgba(60, 56, 54, 0.9); /* more transparent */
   color: #ebdbb2;
+}
+
+#custom-vpn.connected label {
+  font-family:
+  "JetBrainsMono Nerd Font", "Font Awesome 5 Free", "Font Awesome 5 Brands",
+  monospace;
+
+  padding: 0 12px;
+  margin: 4px 6px;
+  border-radius: 10px;
+  background-color: rgba(152, 151, 26, 0.9); /* Gruvbox green */
+  color: #3c3836;
 }
 
 #tray menu {

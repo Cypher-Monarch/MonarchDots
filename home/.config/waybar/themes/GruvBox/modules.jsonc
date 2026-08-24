@@ -123,15 +123,15 @@
   "memory": {
     "format": "/ M {}% ",
   },
-  //VPN (CUSTOM)
   "custom/vpn": {
+    "return-type": "json",
     "format": "{}",
-    "tooltip": "Toggle VPN (click)",
+    "tooltip": true,
     "exec": "~/.vpn/vpn-status.sh",
     "on-click": "~/.vpn/vpn-toggle.sh",
-    "interval": 5,
+    "interval": 5
   },
-  "custom/cava": {
+    "custom/cava": {
     "format": "{}",
     "exec": "~/.config/waybar/themes/GruvBox/cava.sh",
     "on-click": "playerctl previous",

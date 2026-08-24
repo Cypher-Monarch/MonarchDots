@@ -19,7 +19,15 @@ if [[ $(jq -r '.status' <<<"$status") == "CONNECTED" ]]; then
   *) flag="🌐" ;;
   esac
 
-  echo " $flag $country"
+  uptime=$(~/.vpn/vpn-uptime.sh)
+
+  jq -cn \
+    --arg text " $flag $country" \
+    --arg tooltip "$uptime" \
+    '{text: $text, tooltip: $tooltip, class: "connected"}'
 else
-  echo " VPN OFF"
+  jq -cn \
+    --arg text " VPN OFF" \
+    --arg tooltip "VPN is not connected" \
+    '{text: $text, tooltip: $tooltip, class: "disconnected"}'
 fi
