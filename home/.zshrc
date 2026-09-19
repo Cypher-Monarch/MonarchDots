@@ -37,6 +37,7 @@ zinit light zsh-users/zsh-completions
 zinit light jeffreytse/zsh-vi-mode
 
 # Completions
+fpath=(~/.zsh/completions/ $fpath)
 autoload -Uz compinit
 compinit
 
