@@ -13,7 +13,7 @@ if [[ -n $SSH_CONNECTION && $TTY == /dev/pts/* ]]; then
     export XDG_RUNTIME_DIR=/run/user/1000
     export WAYLAND_DISPLAY=wayland-1
     fastfetch
-    echo '\n Welcome back Cypher-Monarch 👑'
+    echo '\n Welcome back Cypher-Monarch 👑\n'
 fi
 
 # Powerlevel10k theme
