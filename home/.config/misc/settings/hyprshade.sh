@@ -1,1 +1,1 @@
-hyprshade_filter="  invert-colors"
+hyprshade_filter="  blue-light-filter-25"

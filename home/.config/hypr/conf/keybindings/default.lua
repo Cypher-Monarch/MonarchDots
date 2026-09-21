@@ -31,8 +31,8 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/powerprofile.sh")) -
 hl.bind("ALT + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/hyprpicker.sh")) -- Open Hyprpicker
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("krunner --replace")) -- krunner
 hl.bind(mainMod .. " + CTRL + o", hl.dsp.exec_cmd("onlyoffice-desktopeditors")) -- Open Onlyoffice
-hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd("playerctl previous")) -- Previous song
-hl.bind(mainMod .. " + ALT + N", hl.dsp.exec_cmd("playerctl next")) -- Next song
+hl.bind("ALT + B", hl.dsp.exec_cmd("playerctl previous")) -- Previous song
+hl.bind("ALT + N", hl.dsp.exec_cmd("playerctl next")) -- Next song
 hl.bind(mainMod .. " + ALT + P", hl.dsp.exec_cmd("playerctl play-pause")) -- Toggle player play - pause
 hl.bind(
 	mainMod .. " + PERIOD",
