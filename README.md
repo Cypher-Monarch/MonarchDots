@@ -8,7 +8,7 @@
 
 ---
 
-> *“Why spend time looking at a boring desktop, when you can look at a pretty one.”*
+> _“Why spend time looking at a boring desktop, when you can look at a pretty one.”_
 
 MonarchDots bundles all configs that shape a cohesive Wayland environment: smooth animations, sharp fonts, responsive bars, tidy notifications, and a consistent workflow.
 
@@ -18,19 +18,19 @@ The setup is reproducible from a fresh install using a bootstrap script.
 
 ## ✨ What’s Inside
 
-* 🌀 Hyprland — window manager
-* 🔒 Hyprlock — lockscreen
-* 🪟 Waybar — status bar
-* 🌄 Waypaper — wallpaper manager
-* 🔊 Cava — audio visualizer
-* 🐇 Eww — widgets
-* 🔍 Fuzzel — launcher
-* 🖥️ Kitty — terminal
-* 🧊 Rofi — menus
-* 🔔 SwayNC — notifications
-* 📦 nwg-dock-hyprland — dock
-* 🚪 Wlogout — logout screen
-* 🧩 Scripts — power, screenshots, wallpaper, utilities
+- 🌀 Hyprland — window manager
+- 🔒 Hyprlock — lockscreen
+- 🪟 Waybar — status bar
+- 🌄 Waypaper — wallpaper manager
+- 🔊 Cava — audio visualizer
+- 🐇 Eww — widgets
+- 🔍 Fuzzel — launcher
+- 🖥️ Kitty — terminal
+- 🧊 Rofi — menus
+- 🔔 SwayNC — notifications
+- 📦 nwg-dock-hyprland — dock
+- 🚪 Wlogout — logout screen
+- 🧩 Scripts — power, screenshots, wallpaper, utilities
 
 Shell setup is included for convenience:
 Powerlevel10k, Zinit, FZF, Gruvbox LS_COLORS, and Pyenv.
@@ -51,11 +51,11 @@ chmod +x install.sh
 
 This will:
 
-* Install required packages
-* Copy all configs
-* Enable essential services
-* Optionally install Chaotic-AUR
-* Optionally apply the GRUB theme
+- Install required packages
+- Copy all configs
+- Enable essential services
+- Optionally install Chaotic-AUR
+- Optionally apply the GRUB theme
 
 Reboot or restart your session after installation.
 
@@ -83,10 +83,10 @@ Install required packages manually.
 
 MonarchDots aims to be:
 
-* Minimal but complete
-* Fast and responsive
-* Visually consistent
-* Reproducible from a fresh install
+- Minimal but complete
+- Fast and responsive
+- Visually consistent
+- Reproducible from a fresh install
 
 The goal is a system that feels cohesive rather than a loose collection of configs.
 
@@ -94,10 +94,10 @@ The goal is a system that feels cohesive rather than a loose collection of confi
 
 ## 🔧 Requirements
 
-* Arch Linux
-* Wayland / Hyprland
-* PipeWire + WirePlumber
-* Nerd Fonts
+- Arch Linux
+- Wayland / Hyprland
+- PipeWire + WirePlumber
+- Nerd Fonts
 
 The bootstrap installer handles most of this automatically.
 
@@ -110,6 +110,9 @@ The bootstrap installer handles most of this automatically.
 ![Screenshot 3](https://cypher-monarch.github.io/arsenal/assets/hypr3-bare.png)
 ![Screenshot 4](https://cypher-monarch.github.io/arsenal/assets/hypr4-bare.png)
 ![Screenshot 5](https://cypher-monarch.github.io/arsenal/assets/hypr5-bare.png)
+![Screenshot 6](https://cypher-monarch.github.io/arsenal/assets/hypr6-bare.png)
+![Screenshot 7](https://cypher-monarch.github.io/arsenal/assets/hypr7-bare.png)
+![Screenshot 8](https://cypher-monarch.github.io/arsenal/assets/hypr8-bare.png)
 
 ---
 
@@ -123,17 +126,16 @@ MIT — feel free to reuse anything.
 
 Planned improvements and ideas for future versions:
 
-* Improve bootstrap script reliability and detection
-* Automatic monitor and resolution profiles
-* Dynamic wallpaper / theme switching
-* More Waybar themes and layout presets
-* Better laptop vs desktop power profile handling
-* Optional minimal install mode
-* Performance tuning and startup optimization
+- Improve bootstrap script reliability and detection
+- Automatic monitor and resolution profiles
+- Dynamic wallpaper / theme switching
+- More Waybar themes and layout presets
+- Better laptop vs desktop power profile handling
+- Optional minimal install mode
+- Performance tuning and startup optimization
 
 Long-term ideas:
 
-* Multi-distro bootstrap support
-* Automatic GPU detection (Intel / AMD / NVIDIA)
-* Theming presets selectable during install
-
+- Multi-distro bootstrap support
+- Automatic GPU detection (Intel / AMD / NVIDIA)
+- Theming presets selectable during install
