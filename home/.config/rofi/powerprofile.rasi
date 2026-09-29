@@ -1,82 +1,145 @@
-/* PowerProfile - Gruvbox dmenu style */
+// Power Profile //
 
 configuration {
-    font: "JetBrainsMonoNL Nerd Font 12, Noto Color Emoji 12";
+    font:                        "JetBrainsMono Nerd Font 11";
+    show-icons:                  false;
+    kb-row-up:                   "Up";
+    kb-row-down:                 "Down";
+    kb-accept-entry:             "Return";
+    kb-cancel:                   "Escape";
 }
 
-element-text, element-icon {
-    background-color: inherit;
-    text-color:       inherit;
-}
+@theme "~/.config/rofi/colors.rasi"
 
-* {
-    bg:        #282828;
-    fg:        #ebdbb2;
-    accent:    #d79921;   /* gold */
-    highlight: #98971a;   /* green */
-}
 
-/* Window */
+// Main //
+
 window {
-    width:          15em;
-    padding:        8px;
-    border:         2px;
-    border-color:   @accent;
-    border-radius:  6px;
-    background-color: @bg;
-    location:       center;
+    width:                       28em;
+    height:                      0em;
+
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+
+    cursor:                      "default";
+
+    spacing:                     0em;
+    padding:                     1.2em;
+
+    border:                      0.12em;
+    border-color:                @outline;
+    border-radius:               1.2em;
+
+    background-color:            @surface;
 }
 
-/* Main menu box */
+
+// Main Box //
+
 mainbox {
-    padding:        0;
-    spacing:        0;
-    children:       [ "listview" ];
-    background-color: transparent;
+    enabled:                     true;
+
+    spacing:                     0.8em;
+    padding:                     0em;
+
+    orientation:                 vertical;
+
+    children:                    [ "header", "listview" ];
+
+    background-color:            transparent;
 }
 
-/* List of options */
+
+// Header //
+
+header {
+    enabled:                     true;
+
+    spacing:                     0.6em;
+    padding:                     0.2em 0.5em;
+
+    children:                    [ "prompt" ];
+
+    background-color:            transparent;
+}
+
+prompt {
+    enabled:                     true;
+
+    padding:                     0em;
+
+    text-color:                  @on-surface;
+    background-color:            transparent;
+}
+
+
+// Profile List //
+
 listview {
-    columns:        1;
-    lines:          3;
-    fixed-height:   true;
-    spacing:        6px;
-    padding:        6px;
-    background-color: transparent;
-    text-color:     @fg;
-    cursor:         "default";
+    enabled:                     true;
+
+    spacing:                     0.45em;
+    padding:                     0em;
+
+    columns:                     1;
+    lines:                       3;
+
+    cycle:                       true;
+    dynamic:                     true;
+
+    scrollbar:                   false;
+
+    layout:                      vertical;
+    reverse:                     false;
+
+    expand:                      false;
+    fixed-height:                false;
+    fixed-columns:               true;
+
+    cursor:                      "default";
+
+    background-color:            transparent;
 }
 
-/* Individual option (normal state) */
+
+// Profile //
+
 element {
-    padding:        6px 10px;
-    border-radius:  4px;
-    background-color: transparent;
-    text-color:     @fg;
+    enabled:                     true;
+
+    spacing:                     0.8em;
+
+    padding:                     0.7em 0.9em;
+
+    cursor:                      pointer;
+
+    background-color:            @surface-container;
+    text-color:                  @on-surface;
+
+    border-radius:               0.9em;
 }
 
-/* Selected option */
-element selected {
-    background-color: @accent;
-    text-color:       @bg;
+element selected.normal {
+    background-color:            @primary-container;
+    text-color:                  @on-primary-container;
+
+    border-radius:               0.9em;
 }
 
-/* Text inside each option */
+
+// Text //
+
 element-text {
-    horizontal-align: 0.5;
-    vertical-align:   0.5;
-    background-color: transparent;
-    text-color: inherit;
-    cursor: inherit;
-}
+    enabled:                     true;
 
-/* Input bar (if shown in dmenu mode) */
-inputbar {
-    padding:        6px 10px;
-    border:         1px;
-    border-color:   @highlight;
-    border-radius:  4px;
-    background-color: @bg;
-    text-color:     @fg;
-}
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
 
+    cursor:                      inherit;
+
+    background-color:            transparent;
+    text-color:                  inherit;
+
+    border-radius:               0.9em;
+}

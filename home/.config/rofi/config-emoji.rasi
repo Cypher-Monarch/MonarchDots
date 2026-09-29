@@ -1,1 +1,191 @@
-@theme "./rounded-yellow-dark.rasi"
+configuration {
+    font: "JetBrainsMono Nerd Font 11";
+    show-icons: true;
+    icon-theme: "Tela-circle-dracula";
+
+    hover-select: false;
+    scroll-method: 1;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+}
+
+@theme "~/.config/rofi/colors.rasi"
+
+window {
+    location: center;
+    anchor: center;
+
+    width: 24em;
+
+    padding: 0.7em;
+
+    border: 0.1em;
+    border-color: @outline;
+    border-radius: 1em;
+
+    background-color: @surface;
+    transparency: "real";
+}
+
+mainbox {
+    enabled: true;
+    orientation: vertical;
+
+    spacing: 0.5em;
+    padding: 0em;
+
+    children: [
+        "inputbar",
+        "message",
+        "listview"
+    ];
+
+    background-color: transparent;
+}
+
+inputbar {
+    enabled: true;
+
+    spacing: 0.4em;
+    padding: 0.55em 0.7em;
+
+    children: [
+        "prompt",
+        "entry"
+    ];
+
+    background-color: @surface-container;
+    border-radius: 0.7em;
+}
+
+prompt {
+    enabled: true;
+    expand: false;
+
+    padding: 0em;
+
+    text-color: @on-surface-variant;
+    background-color: transparent;
+}
+
+entry {
+    enabled: true;
+
+    padding: 0em;
+
+    text-color: @on-surface;
+    cursor: text;
+
+    placeholder: "Search";
+    placeholder-color: @on-surface-variant;
+
+    background-color: transparent;
+}
+
+message {
+    enabled: true;
+
+    padding: 0em;
+
+    border-radius: 0.7em;
+
+    background-color: @surface-container;
+    text-color: @on-surface-variant;
+}
+
+textbox {
+    enabled: true;
+
+    padding: 0.45em 0.7em;
+
+    background-color: transparent;
+    text-color: @on-surface-variant;
+
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+listview {
+    enabled: true;
+
+    margin: 0em;
+    padding: 0em;
+
+    lines: 7;
+    columns: 1;
+
+    dynamic: true;
+    fixed-height: false;
+    fixed-columns: true;
+
+    cycle: true;
+    reverse: false;
+    layout: vertical;
+
+    spacing: 0.25em;
+
+    scrollbar: false;
+
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+
+    padding: 0.45em 0.65em;
+    spacing: 0.5em;
+
+    border-radius: 0.65em;
+
+    cursor: pointer;
+
+    background-color: @surface-container;
+    text-color: @on-surface;
+}
+
+element normal {
+    background-color: @surface-container;
+    text-color: @on-surface;
+}
+
+element alternate {
+    background-color: @surface-container;
+    text-color: @on-surface;
+}
+
+element active {
+    background-color: @surface-container;
+    text-color: @on-surface;
+}
+
+element urgent {
+    background-color: @surface-container;
+    text-color: @on-surface;
+}
+
+element selected {
+    background-color: @primary-container;
+    text-color: @on-primary-container;
+}
+
+element-icon {
+    enabled: true;
+
+    size: 1.4em;
+    vertical-align: 0.5;
+
+    cursor: inherit;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-text {
+    enabled: true;
+
+    horizontal-align: 0.0;
+    vertical-align: 0.5;
+
+    cursor: inherit;
+    background-color: transparent;
+    text-color: inherit;
+}

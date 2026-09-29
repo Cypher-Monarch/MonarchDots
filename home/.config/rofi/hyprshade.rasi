@@ -1,73 +1,130 @@
-* {
-    bg:        #282828;   /* dark grey base */
-    fg:        #ebdbb2;   /* soft cream text */
-    accent:    #d79921;   /* gold */
-    highlight: #b8bb26;   /* slightly brighter green */
+// Hyprshade //
+
+configuration {
+    font: "JetBrainsMono Nerd Font 11";
+    show-icons: false;
 }
 
-/* Window */
+
+// Theme //
+
+@theme "~/.config/rofi/colors.rasi"
+
+
+// Window //
+
 window {
-    width:          18em;             /* a bit wider for nicer spacing */
-    padding:        10px;             /* more breathing room */
-    border:         2px;
-    border-color:   @accent;
-    border-radius:  8px;              /* slightly rounder */
-    background-color: @bg;
-    location:       center;
+    width: 24em;
+    height: 0em;
+
+    location: center;
+
+    padding: 1.1em;
+
+    border: 0.12em;
+    border-color: @outline;
+    border-radius: 1.2em;
+
+    background-color: @surface;
+
+    transparency: "real";
 }
 
-/* Main menu box */
+
+// Main Box //
+
 mainbox {
-    padding:        0;
-    spacing:        0;
-    children:       [ "listview" ];
+    enabled: true;
+
+    padding: 0em;
+    spacing: 0.7em;
+
+    orientation: vertical;
+
+    children: [
+        "prompt",
+        "listview"
+    ];
+
     background-color: transparent;
 }
 
-/* List of options */
+
+// Prompt //
+
+prompt {
+    enabled: true;
+
+    padding: 0.2em 0.5em;
+
+    text-color: @on-surface;
+
+    background-color: transparent;
+}
+
+
+// List //
+
 listview {
-    columns:        1;
-    lines:          5;                /* show more options by default */
-    fixed-height:   false;            /* allow dynamic height */
-    spacing:        8px;
-    padding:        8px;
+    enabled: true;
+
+    columns: 1;
+    lines: 5;
+
+    dynamic: true;
+    fixed-height: false;
+    fixed-columns: true;
+
+    spacing: 0.45em;
+    padding: 0em;
+
+    scrollbar: false;
+
+    layout: vertical;
+
     background-color: transparent;
-    text-color:     @fg;
-    cursor:         "pointer";        /* more interactive feel */
-    font:           "JetBrains Mono 11"; /* optional: nicer monospaced font */
 }
 
-/* Individual option (normal state) */
+
+// Option //
+
 element {
-    padding:        8px 12px;
-    border-radius:  6px;
-    text-color:     @fg;
+    enabled: true;
+
+    padding: 0.7em 0.9em;
+
+    spacing: 0.7em;
+
+    cursor: pointer;
+
+    border-radius: 0.9em;
+
+    background-color: @surface-container;
+    text-color: @on-surface;
 }
 
-/* Selected option */
+
+// Selected Option //
+
 element selected {
-    background-color: @accent;
-    text-color:       @bg;
-    font-weight:      bold;
+    background-color: @primary-container;
+    text-color: @on-primary-container;
+
+    border-radius: 0.9em;
 }
 
-/* Text inside each option */
+
+// Text //
+
 element-text {
-    horizontal-align: 0.5;
-    vertical-align:   0.5;
+    enabled: true;
+
+    horizontal-align: 0.0;
+    vertical-align: 0.5;
+
     background-color: transparent;
+
     text-color: inherit;
+
     cursor: inherit;
 }
-
-/* Input bar (if shown in dmenu mode) */
-inputbar {
-    padding:        8px 12px;
-    border:         1px;
-    border-color:   @highlight;
-    border-radius:  6px;
-    background-color: @bg;
-    text-color:     @fg;
-    font-style:     italic;  /* subtle stylistic touch */
-}
-

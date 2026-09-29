@@ -24,10 +24,10 @@ hl.bind(mainMod .. " + ALT + O", hl.dsp.exec_cmd("obs")) -- Open OBS studio
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zen 'https://web.whatsapp.com'")) -- Open whatsapp web
 hl.bind(mainMod .. " + CTRL + V", hl.dsp.exec_cmd("~/.vpn/vpn-toggle.sh")) -- Open custom vpn utility
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("~/.config/nwg-dock-hyprland/launch.sh")) -- Toggle the dock
-hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd("eww open --toggle music-widget"))
+hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd("eww open --toggle music-widget")) -- Toggle Music Widget
 hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("swaync-client -t")) -- Toggle swaync-client
 hl.bind("CTRL + SHIFT + escape", hl.dsp.exec_cmd("kitty -e btop-root")) -- Open btop
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/powerprofile.sh")) -- powerprofile
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/powerprofile.sh")) -- Power Profile Selector
 hl.bind("ALT + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/hyprpicker.sh")) -- Open Hyprpicker
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("krunner --replace")) -- krunner
 hl.bind(mainMod .. " + CTRL + o", hl.dsp.exec_cmd("onlyoffice-desktopeditors")) -- Open Onlyoffice
@@ -51,7 +51,6 @@ hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" })) -- Toggle
 hl.bind(mainMod .. " + SHIFT + T", function()
 	hl.exec_cmd("hyprctl dispatch workspaceopt allfloat")
 end) -- Toggle all windows into floating mode
--- bind = $mainMod, J, togglesplit                                                             # Toggle split
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" })) -- Move focus left
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" })) -- Move focus right
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" })) -- Move focus up
@@ -93,7 +92,6 @@ hl.bind(mainMod .. " + SHIFT + H", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/hyprshade.sh
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/hyprshade.sh rofi")) -- Toggle screenshader
 hl.bind(mainMod .. " + ALT + G", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/gamemode.sh")) -- Toggle game mode
 hl.bind(mainMod .. " + CTRL + L", hl.dsp.exec_cmd("~/.config/hypr/scripts/power.sh lock")) -- Start wlogout
-hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/screen-record.sh")) -- Start screen recording
 
 -- Volume Actions
 hl.bind("ALT + Up", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/volume.sh up")) -- increment volume
@@ -106,7 +104,7 @@ hl.bind("CTRL + Right", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/mic.sh up")) -- decreme
 hl.bind("CTRL + SHIFT + M", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/mic.sh mute")) -- mute microphone
 
 -- Headphones
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"))
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause")) -- FN key toggle play-pause
 -- bind = , mouse:276, exec, playerctl next
 -- bind = , mouse:275, exec, playerctl previous
 
@@ -150,6 +148,3 @@ hl.bind(mainMod .. " + CTRL + 0", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/moveTo.sh 10"
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" })) -- Open next workspace
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" })) -- Open previous workspace
 hl.bind(mainMod .. " + CTRL + down", hl.dsp.focus({ workspace = "empty" })) -- Open the next empty workspace
-
-hl.bind("code:238", hl.dsp.exec_cmd("brightnessctl -d smc::kbd_backlight s +10"))
-hl.bind("code:237", hl.dsp.exec_cmd("brightnessctl -d smc::kbd_backlight s 10-"))
