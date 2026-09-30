@@ -3,10 +3,10 @@
   "position": "top",
   "height": 32,
   "include": [
-    "~/.config/waybar/themes/Monarch/modules.json"
+    "~/.config/waybar/themes/GruvBox/modules.jsonc"
   ],
 
-  "modules-left": ["clock", "bluetooth", "custom/vpn","tray"],
+  "modules-left": ["clock", "bluetooth", "custom/vpn", "custom/cava", "tray"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["group/hardware", "battery", "pulseaudio", "network", "custom/notification", "custom/exit"],
 
@@ -30,23 +30,6 @@
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip": false
-  },
-
-  "pulseaudio": {
-    "format": " {volume}%",
-    "format-muted": " muted",
-    "on-click": "pavucontrol",
-    "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-  },
-
-  "network": {
-    "format-wifi": " {signalStrength}%",
-    "format-ethernet": "󰈀 ETH",
-    "format-disconnected": "󰤮",
-    "tooltip": "Network",
-    "on-click": "kitty -e nmtui",
   },
 
   "tray": {
