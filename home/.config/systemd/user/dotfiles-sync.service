@@ -1,0 +1,6 @@
+[Unit]
+Description=Sync dotfiles to MonarchDots repo
+
+[Service]
+Type=oneshot
+ExecStart=/home/rishabh/.local/bin/dotfiles_automation

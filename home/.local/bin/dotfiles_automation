@@ -1,0 +1,104 @@
+#!/bin/bash
+
+set -euo pipefail
+
+REPO="$HOME/Development/Github/MonarchDots"
+CONFIG_DEST="$REPO/home/.config"
+HOME_DEST="$REPO/home"
+
+configs=(
+  cava
+  eww
+  fastfetch
+  fuzzel
+  hypr
+  hyprlock
+  kitty
+  misc
+  nwg-dock-hyprland
+  rofi
+  swaync
+  waybar
+  waypaper
+  wlogout
+  qt6ct
+)
+
+files=(
+  .zshrc
+  .p10k.zsh
+  .vpn
+  .dircolors
+)
+
+echo "Syncing .config directories..."
+
+for dir in "${configs[@]}"; do
+  src="$HOME/.config/$dir"
+  dest="$CONFIG_DEST/$dir"
+
+  if [[ -d "$src" ]]; then
+    mkdir -p "$dest"
+    rsync -a --delete "$src/" "$dest/"
+    echo "  Synced $dir"
+  else
+    echo "  Skipped $dir (not found)"
+  fi
+done
+
+echo
+echo "Syncing home files..."
+
+mkdir -p "$HOME_DEST"
+
+for file in "${files[@]}"; do
+  src="$HOME/$file"
+
+  if [[ -e "$src" ]]; then
+    rsync -a "$src" "$HOME_DEST/"
+    echo "  Synced $file"
+  else
+    echo "  Skipped $file (not found)"
+  fi
+done
+
+echo
+echo "Cleaning cache..."
+
+CACHE_DIR="$CONFIG_DEST/misc/cache"
+
+if [[ -d "$CACHE_DIR" ]]; then
+  find "$CACHE_DIR" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+  echo "  Cache cleared"
+else
+  echo "  Cache directory not found"
+fi
+
+echo
+echo "Checking Git repository..."
+
+cd "$REPO"
+
+git add .
+
+if git diff --cached --quiet; then
+  echo "No changes to commit."
+  exit 0
+fi
+
+echo
+echo "Changes to commit:"
+git diff --cached --stat
+
+echo
+echo "Creating commit..."
+
+git commit -m "chore(dotfiles): sync latest config changes"
+
+echo
+echo "Pushing to GitHub..."
+
+git push origin main
+
+echo
+echo "Done."

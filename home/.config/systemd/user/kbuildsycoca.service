@@ -1,0 +1,10 @@
+[Unit]
+Description=Rebuild KDE app menu cache
+After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env XDG_MENU_PREFIX=arch- kbuildsycoca6
+
+[Install]
+WantedBy=default.target

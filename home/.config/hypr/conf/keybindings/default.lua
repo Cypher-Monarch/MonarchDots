@@ -29,7 +29,7 @@ hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("swaync-client -t")) -- Toggle
 hl.bind("CTRL + SHIFT + escape", hl.dsp.exec_cmd("kitty -e btop-root")) -- Open btop
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/powerprofile.sh")) -- Power Profile Selector
 hl.bind("ALT + P", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/hyprpicker.sh")) -- Open Hyprpicker
-hl.bind("ALT + SPACE", hl.dsp.exec_cmd("krunner --replace")) -- krunner
+hl.bind("ALT + SPACE", hl.dsp.exec_cmd("krunner --replace")) -- Open Krunner
 hl.bind(mainMod .. " + CTRL + o", hl.dsp.exec_cmd("onlyoffice-desktopeditors")) -- Open Onlyoffice
 hl.bind("ALT + B", hl.dsp.exec_cmd("playerctl previous")) -- Previous song
 hl.bind("ALT + N", hl.dsp.exec_cmd("playerctl next")) -- Next song
@@ -148,3 +148,14 @@ hl.bind(mainMod .. " + CTRL + 0", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/moveTo.sh 10"
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" })) -- Open next workspace
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" })) -- Open previous workspace
 hl.bind(mainMod .. " + CTRL + down", hl.dsp.focus({ workspace = "empty" })) -- Open the next empty workspace
+
+-- Laptop FN Keys
+
+-- Volume
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/volume.sh up"))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/volume.sh down"))
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(HYPRSCRIPTS .. "/volume.sh mute"))
+
+-- Brightness
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl set 7%"))
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 7%-"))
