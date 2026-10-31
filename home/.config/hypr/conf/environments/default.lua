@@ -3,7 +3,6 @@
 -- name: "Default"
 -- -----------------------------------------------------
 
-
 hl.env("XDG_MENU_PREFIX", "arch-")
 
 -- XDG Desktop Portal
@@ -19,6 +18,7 @@ hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 
 -- GDK
 hl.env("GDK_SCALE", "1")
+hl.env("GDK_WAYLAND_DISABLE", "ext_background_effect_manager_v1")
 
 -- Toolkit Backend
 hl.env("GDK_BACKEND", "wayland,x11,*")
