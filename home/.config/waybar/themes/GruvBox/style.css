@@ -60,7 +60,7 @@ window#waybar {
   color: #ebdbb2;
 }
 
-#custom-vpn.connected label {
+#custom-vpn.connected{
   font-family:
   "JetBrainsMono Nerd Font", "Font Awesome 5 Free", "Font Awesome 5 Brands",
   monospace;
