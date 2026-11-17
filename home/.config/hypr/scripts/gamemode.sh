@@ -21,6 +21,9 @@ else
             rounding = 0,
             shadow = { enabled = false },
             blur = { enabled = false },
+            active_opacity = 1.0,
+            inactive_opacity = 1.0,
+            fullscreen_opacity = 1.0,
         },
         general = {
             gaps_in = 0,
